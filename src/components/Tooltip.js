@@ -6,12 +6,12 @@ const Tooltip =({ text, children})=>{
   const showTooltip =()=>setVisible(true);
   const hideTooltip =()=>setVisible(false);
   return (
-    <div className='tooltip' onMouseEnter={showTooltip} onMouseLeave={hideTooltip}>
+    <h2 className='tooltip' onMouseEnter={showTooltip} onMouseLeave={hideTooltip}>
       <div>
         {children}
         {visible && <div className="tooltiptext">{text}</div>}
       </div>
-    </div>
+    </h2>
   );
 }
 export default Tooltip;
