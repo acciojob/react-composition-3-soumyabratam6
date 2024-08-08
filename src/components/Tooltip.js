@@ -6,7 +6,7 @@ const Tooltip =({ text, children})=>{
   const showTooltip =()=>setVisible(true);
   const hideTooltip =()=>setVisible(false);
   return (
-    <div className='tooltip' onMouseEnter={showTooltip} onMouseLeave={hideTooltip}>
+    <div  onMouseEnter={showTooltip} onMouseLeave={hideTooltip}>
         {children}
         {visible && <div className="tooltiptext">{text}</div>}
     </div>

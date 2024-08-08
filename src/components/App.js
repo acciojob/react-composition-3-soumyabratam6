@@ -5,12 +5,12 @@ import Tooltip from "./Tooltip";
 const App = () => {
   return (
     <div className="App">
-        <h2>
-          <Tooltip text="This is a tooltip for the first element">
+        <h2 className='tooltip'>
+          <Tooltip  text="This is a tooltip for the first element">
             This is a tooltip
           </Tooltip>
         </h2>
-          <p>
+          <p className='tooltip'>
             <Tooltip text="This is a tooltip for the second element">
               This is another tooltip
             </Tooltip>
