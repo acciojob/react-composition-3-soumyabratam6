@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import '../styles/Tooltip.css'
 const Tooltip =({ text, children})=>{
@@ -7,9 +8,10 @@ const Tooltip =({ text, children})=>{
   return (
     <div className='tooltip' onMouseEnter={showTooltip}
     onMouseLeave ={hideTooltip}>
-       
-        {children}
-      {visible && <div className="tooltiptext">{text}</div>}
+       <h2>
+        {children}</h2>
+      <p>{visible && <div className="tooltiptext">{text}</div>}</p>
+      
     </div>
   );
 }
