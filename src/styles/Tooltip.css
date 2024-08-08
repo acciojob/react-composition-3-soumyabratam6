@@ -1,0 +1,33 @@
+/* Tooltip.css */
+.tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color:red;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; /* Position above the element */
+    left: 50%;
+    margin-left: -60px; /* Center the tooltip */
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  /* Additional styling for highlighted text in App component */
+  /* .highlight {
+    background-color: yellow;
+  } */
+  
