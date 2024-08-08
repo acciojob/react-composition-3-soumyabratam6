@@ -14,7 +14,7 @@
     padding: 5px;
     position: absolute;
     z-index: 1;
-    bottom: 125%; 
+    bottom: 55%; 
     left: 50%;
     margin-left: -60px; 
     opacity: 0;
@@ -27,7 +27,5 @@
   }
   
   /* Additional styling for highlighted text in App component */
-  /* .highlight {
-    background-color: yellow;
-  } */
+  
   
