@@ -1,17 +1,16 @@
 
 import React, { useState } from 'react';
 import '../styles/Tooltip.css'
-const Tooltip =({ text, children})=>{
+const Tooltip =({ text1,text2, children})=>{
   const [visible, setVisible] =useState(false);
   const showTooltip =()=>setVisible(true);
   const hideTooltip =()=>setVisible(false);
   return (
-    <h2 className='tooltip' onMouseEnter={showTooltip} onMouseLeave={hideTooltip}>
-      <div>
+    <div className='tooltip' onMouseEnter={showTooltip} onMouseLeave={hideTooltip}>
         {children}
-        {visible && <div className="tooltiptext">{text}</div>}
-      </div>
-    </h2>
+        {visible && <div className="tooltiptext"><h2>{text1}</h2></div>}
+        {visible && <div className="tooltiptext"><p>{text2}</p></div>}
+    </div>
   );
 }
 export default Tooltip;
